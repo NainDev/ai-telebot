@@ -96,7 +96,7 @@ bot.onText(/^\/runtime$/, (msg) => {
 bot.onText(/^\/start$/, (msg) => {
   const From = msg.chat.id;
   const user = msg.from;
-  const caption = `Hi ${user.first_name}! Welcome to BetaBotz Ai. I am an AI chatbot created by Lann to help you with all your needs 😄. Please tell me what you need, and I will assist you as best as possible.`;
+  const caption = `Hi ${user.first_name}! Selamat Datang di Chai Ai. Saya adalah chatbot AI yang dibuat oleh Nain untuk membantu Anda dengan semua kebutuhan Anda 😄. Tolong beri tahu saya apa yang Anda butuhkan, dan saya akan membantu Anda sebaik mungkin.`;
 
   senderInfo = `From: ${msg.from.first_name} (@${msg.from.username || 'N/A'})`;
   dateInfo = `Date: ${new Date(msg.date * 1000).toLocaleString()}`;
@@ -104,7 +104,7 @@ bot.onText(/^\/start$/, (msg) => {
   const replyMarkup = {
     reply_markup: {
       inline_keyboard: [
-        [{ text: 'Visit BetaBotz-Ai', url: 'https://api.betabotz.org' }],
+        [{ text: 'Pusat Bantuan', url: 'https://wa.me/6288223674569' }],
       ],
     },
   };
@@ -131,7 +131,7 @@ bot.on('message', async (msg) => {
       disable_web_page_preview: true,
       reply_markup: {
         inline_keyboard: [
-          [{ text: 'BetaBotz Ai', url: 'http://api.betabotz.org' }],
+          [{ text: 'Website', url: 'http://www.nainnadika.my.id' }],
         ],
       },
     };
